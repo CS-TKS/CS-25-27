@@ -11,14 +11,17 @@ public class ArrayMessage {
 
         // Transpose the rawSignal
 
+
+       
         // vertically reflect every even indexed column
         // column 0 must be vertically reflected, etc.
+        // column 1 must remain the same
 
         // Calculate the average of the 4 integers in each row.
 
         // find the ASCII value of each result and print it to the console
 
-        
+
 
     }
 
