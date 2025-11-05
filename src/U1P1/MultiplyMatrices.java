@@ -1,3 +1,5 @@
+package U1P1;
+
 public class MultiplyMatrices {
     //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -21,7 +23,7 @@ public class MultiplyMatrices {
 
             // Can i multiply the two matrices
 
-            if(numbersB[0].length == numbersA.length){
+            if(numbersA[0].length == numbersB.length){
                 System.out.println("You Can Multiply");
             }
 
