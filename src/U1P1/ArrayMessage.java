@@ -9,10 +9,13 @@ public class ArrayMessage {
                 { 80, 112, 100, 110, 118, 110, 114}
         };
 
+
+
+
         // Transpose the rawSignal
 
 
-       
+
         // vertically reflect every even indexed column
         // column 0 must be vertically reflected, etc.
         // column 1 must remain the same
