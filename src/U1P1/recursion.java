@@ -5,9 +5,9 @@ public class recursion {
     public static void main(String[] args) {
         pyramid(10);
     }
-public static int fibonnacci(int n){
-        
-}
+    public static int fibonnacci(int n){
+
+    }
     public static void pyramid(int n){
         // base case
         if(n==0){
