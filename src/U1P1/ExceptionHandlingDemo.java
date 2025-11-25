@@ -21,7 +21,7 @@ public class ExceptionHandlingDemo {
         //demo_2_TheFix();
 
         // STEP 3: A preview of why we need this for Files
-        // demo_3_FilePreview();
+        demo_3_FilePreview();
 
         System.out.println("\n--- END OF DEMO ---");
     }
