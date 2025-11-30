@@ -1,4 +1,5 @@
 package U1P1;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.FileReader;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 
 
 public class FileProcessingScaffold {
-   static String fileName = "text.txt";
+    static String fileName = "text.txt";
 
     public static void main(String[] args) {
 
@@ -17,7 +18,8 @@ public class FileProcessingScaffold {
         System.out.println("#######################");
         System.out.println();
 
-        writeNewFile();
+        //writeNewFile();
+        readWithScanner();
 
     }
 
@@ -38,13 +40,26 @@ try {
     System.out.println("An error occurred:  " + e.getMessage());
 }
     }
+
+    public static void readWithScanner(){
+        System.out.println("Reading with Scanner...");
+        try{
+            File myFile = new File(fileName);
+
+            Scanner fileScanner = new Scanner(myFile);
+
+            while(fileScanner.hasNextLine()){
+                String data = fileScanner.nextLine();
+                System.out.println("Reading Line: " + data);
+            }
+
+            fileScanner.close();
+
+
+        }catch(Exception e){
+            System.out.println("File not found or unreadable.");
+        }
+    }
+
 }
 
-public static void readWithScanner(){
-    try{
-        File myFile = new File(fileName);
-        
-    }catch(Exception e){
-        System.out.println("File not found or unreadable.");
-    }
-}
