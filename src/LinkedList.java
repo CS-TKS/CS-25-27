@@ -42,7 +42,7 @@ public class LinkedList {
             current = current.next;
             System.out.println("In the While loop");
         }
-        current.next = newNode;
+        //current.next = newNode;
         return;
     }
 
