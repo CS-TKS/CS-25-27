@@ -36,13 +36,15 @@ public class LinkedList {
             {
             newNode.next = current.next;
             current.next = newNode;
-        }
+        }else {
 
-        while (current.next != null) {
-            current = current.next;
-            System.out.println("In the While loop");
+            while (current.next != null) {
+                current = current.next;
+                System.out.println("In the While loop");
+            }
+            current.next = newNode;
+           // return;
         }
-        //current.next = newNode;
         return;
     }
 
